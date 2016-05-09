@@ -1,5 +1,14 @@
 ---
 ---
 
-@import "reset";
-@import "global";
+@import 'base/reset',
+'base/colors',
+'base/fonts';
+
+@import 'mixins';
+
+@import 'sections/base',
+'sections/header',
+'sections/post',
+'sections/sidebar';
+

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    src: local('Fira Sans'),
+         local('Fira-Sans'),
+         url('../fonts/FiraSans-Regular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 700;
+    src:
+        local('Oswald'),
+        url('../fonts/Oswald-Bold.ttf') format('truetype');
+}
+
+$font-family: 'Fira Sans', sans-serif;
