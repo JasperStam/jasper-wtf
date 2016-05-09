@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<header class="header-big">
+  <h1 class="diagonal-drop">JASPER.WTF</h1>
+</header>
+
+<div class="nav-big">
+    <ul>
+        {% for item in site.data.navigation %}
+        <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
