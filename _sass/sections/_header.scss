@@ -1,0 +1,25 @@
+.header {
+    overflow: hidden;
+    animation: stripe-move 1s linear infinite;
+    border: 3px solid $color-gray;
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        $color-gray,
+        $color-gray $stripe-width-half,
+        $color-white $stripe-width-half,
+        $color-white $stripe-width);
+}
+
+.header-big {
+    padding: 50px 120px 150px 120px;
+}
+
+.header-small {
+    padding: 10px;
+}
+
+
+.drop-diagonal {
+    @include text-shadow(longdrop($color-gray, $color-gray, 400));
+}

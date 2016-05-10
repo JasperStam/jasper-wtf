@@ -3,9 +3,13 @@
 
 @import 'base/reset',
 'base/colors',
+'base/global',
+'base/helpers',
 'base/fonts';
 
-@import 'mixins';
+@import 'patterns/mixins',
+'patterns/typography',
+'patterns/animations';
 
 @import 'sections/base',
 'sections/header',
