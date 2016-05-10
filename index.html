@@ -2,17 +2,13 @@
 layout: default
 ---
 
-<header class="header header-big drop-diagonal margin-top-100 color-white text-huge">
-  <h1 class="diagonal-drop">JASPER.WTF</h1>
+<header class="header header-big margin-top-100 color-white text-huge">
+  <h1 class="drop-diagonal">JASPER.WTF</h1>
 </header>
 
-<!-- <div class="nav-big">
-    <ul>
-        {% for item in site.data.navigation %}
-        <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+<div class="margin-top-30 flex flex-between font-amaranth">
+    {% for item in site.data.navigation %}
+    <a class="color-gray text-big hover-black" href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
 </div>
- -->
+

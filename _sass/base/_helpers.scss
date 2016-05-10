@@ -13,11 +13,10 @@
 .text-underline         {text-decoration: underline;}
 .text-bold              {font-weight: bold;}
 .text-single-line       {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.color-light-gray       {color: $color-light-gray;}
+.color-gray             {color: $color-gray;}
+.color-black            {color: $color-black;}
 .color-white            {color: white;}
-// .color-medium           {color: $color-medium;}
-// .color-light            {color: $color-light;}
-// .color-dark             {color: $color-dark;}
-// .color-super-dark       {color: $color-super-dark;}
 
 /** Flex            -------------------------------- */
 .flex                   {display: flex;}
@@ -42,6 +41,8 @@
 .margin-0-10            {margin: 0 10px;}
 .margin-10-0            {margin: 10px 0;}
 .margin-10              {margin: 10px;}
+
+.margin-top-30          {margin-top: 30px;}
 
 /** Padding medium  -------------------------------- */
 .padding-top-10         {padding-top: 10px;}

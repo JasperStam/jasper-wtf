@@ -16,10 +16,21 @@
 }
 
 .header-small {
-    padding: 10px;
+    > .drop-diagonal {
+        width: 180px;
+        height: 180px;
+        padding: 20px;
+    }
 }
-
 
 .drop-diagonal {
     @include text-shadow(longdrop($color-gray, $color-gray, 400));
+}
+
+.hover-black {
+    transition: color 0.1s ease-out, text-shadow 0.1s ease-out;
+    &:hover {
+        text-shadow: 1px 1px 0px $color-white;
+        color: $color-black;
+    }
 }

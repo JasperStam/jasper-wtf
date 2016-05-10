@@ -1,12 +1,14 @@
-<nav class="sidebar">
-    <header class="header-small">
-        <h2>WTF</h2>
-    </header>
-    <ul>
-        {% for item in site.data.navigation %}
-        <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+<nav class="sidebar-container">
+    <div class="sidebar">
+        <header class="header header-small color-white text-huge">
+            <h2 class="drop-diagonal">WTF</h2>
+        </header>
+        <ul>
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </nav>
