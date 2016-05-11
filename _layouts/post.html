@@ -2,11 +2,13 @@
 layout: default
 ---
 
-<div class="post">
-    <a class="post__back" href="/">&lt;-- back</a>
-    <h1 class="post__title">{{ page.title }}</h1>
-    <p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
-    <div class="post__content"?>
+{% include sidebar.html %}
+
+<main class="section">
+    <h1 class="text-bigger text-uppercase color-white">{{ page.title }}</h1>
+    <p class="font-amaranth color-white">{{ page.date | date: '%B %-d, %Y' }}</p>
+    <a href="/fontys" class="back color-white"><<</a>
+    <div class="margin-top-30 color-white"?>
         {{ content }}
     </div>
-</div>
+</main>
