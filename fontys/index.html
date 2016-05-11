@@ -9,7 +9,7 @@ layout: default
     <div class="tags width-full"></div>
  -->    <div class="post-container margin-top-30">
         {% for post in site.posts %}
-        <a href="{{ post.url }}" class="post bg-{% cycle
+        <a href="{{ post.url }}" class="margin-bottom-20 post bg-{% cycle
         'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal',
         'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange' %}">
             <h3 class="text-uppercase text-big color-white drop">{{ post.title }}</h3>
