@@ -5,12 +5,14 @@ layout: default
 {% include sidebar.html %}
 
 <main class="section">
-    <input type="search" class="full-width search-main">
-    <div class="tags full-width"></div>
-    <div class="post-container">
+<!--     <input type="search" class="width-full search-main color-gray" placeholder="Filter op rubrics">
+    <div class="tags width-full"></div>
+ -->    <div class="post-container margin-top-30">
         {% for post in site.posts %}
-        <a href="{{ post.url }}">
-            <div class="post">{{ post.title }}</div>
+        <a href="{{ post.url }}" class="post bg-{% cycle
+        'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal',
+        'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange' %}">
+            <h3 class="text-uppercase text-big color-white drop">{{ post.title }}</h3>
         </a>
         {% endfor %}
     </div>

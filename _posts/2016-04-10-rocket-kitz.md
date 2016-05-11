@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rocket Kitz
+title: Renders rocket kitz
 ---
 
 Blabla
