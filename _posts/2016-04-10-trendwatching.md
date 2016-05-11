@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Renders rocket kitz
+title: Trend watching
 ---
 
 Blabla
