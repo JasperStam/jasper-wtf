@@ -64,7 +64,7 @@ main.section {
     transition: all 0.1s ease-out;
 
     &:hover {
-        -webkit-filter: brightness(1.1);
+        filter: brightness(1.1);
         padding: 20px 20px 20px 30px;
     }
 }

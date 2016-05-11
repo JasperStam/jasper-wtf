@@ -8,6 +8,10 @@ google_verification: null
 # include: [".htaccess"]
 exclude: ["README.md", "LICENSE"]
 
+# Gems
+gems:
+  - octopress-autoprefixer
+
 
 # Sass
 sass:
