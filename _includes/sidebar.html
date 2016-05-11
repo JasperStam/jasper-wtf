@@ -1,14 +1,14 @@
 <nav class="sidebar-container">
-    <div class="sidebar border-white">
+    <div class="sidebar">
         <a href="/">
-            <header class="header header-small color-white text-huge">
+            <header class="header header-small color-white text-huge border-white">
                 <h2 class="drop-diagonal">WTF</h2>
             </header>
         </a>
         <ul class="margin-top-30 margin-left-20 font-amaranth">
             {% for item in site.data.navigation %}
             <li class="margin-bottom-10">
-                <a class="color-white text-big text-right hover-black" href="{{ item.url }}">{{ item.title }}</a>
+                <a class="color-white text-medium text-right hover-black" href="{{ item.url }}">{{ item.title }}</a>
             </li>
             {% endfor %}
         </ul>
