@@ -1,9 +1,11 @@
 body {
     font-family: $font-family;
-    background: $color-light-gray;
+    background: $color-gray;
+    color: white;
 }
 
 .wrapper {
     max-width: 816px;
     margin: auto;
+    min-height: calc(100vh - 60px);
 }

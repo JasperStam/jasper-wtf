@@ -11,6 +11,7 @@
 .text-right             {text-align: right;}
 .text-center            {text-align: center;}
 .text-underline         {text-decoration: underline;}
+.text-uppercase         {text-transform: uppercase;}
 .text-bold              {font-weight: bold;}
 .text-single-line       {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .color-light-gray       {color: $color-light-gray;}
@@ -43,6 +44,7 @@
 .margin-10              {margin: 10px;}
 
 .margin-top-30          {margin-top: 30px;}
+.margin-left-20          {margin-left: 20px;}
 
 /** Padding medium  -------------------------------- */
 .padding-top-10         {padding-top: 10px;}
@@ -81,25 +83,6 @@
 .pos-fixed              {position: fixed;}
 
 /** Background      -------------------------------- */
-// .bg-super-dark          {background: $color-super-dark;}
-// .bg-super-dark          {background: $color-super-dark;}
-// .bg-really-dark         {background: $color-really-dark;}
-// .bg-dark                {background: $color-dark;}
-// .bg-medium              {background: $color-medium;}
-// .bg-high-light          {background: $color-high-light;}
-// .bg-light               {background: $color-light;}
-// .bg-lighter             {background: $color-lighter;}
-// .bg-white               {background: $color-white;}
-// .bg-lighter-green       {background: $color-bg-lighter-green;}
-// .bg-light-green         {background: $color-bg-light-green;}
-// .bg-medium-green        {background: $color-bg-medium-green;}
-// .bg-darker-green        {background: $color-bg-darker-green;}
-// .bg-ok                  {background: $color-bg-ok;}
-// .bg-alert               {background: $color-bg-alert;}
-// .bg-alert-dark          {background: $color-bg-alert-dark;}
-// .bg-delete              {background: $color-bg-delete;}
-// .bg-yellow              {background: $color-bg-yellow;}
-// .bg-light-orange        {background: $color-bg-light-orange;}
-// .bg-orange              {background: $color-bg-orange;}
+
 
 

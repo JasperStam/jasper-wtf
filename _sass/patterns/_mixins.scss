@@ -49,3 +49,21 @@
 
   @return $gradient_steps;
 }
+
+@each $color-name in $color-list {
+    $i: index($color-list, $color-name);
+    .color-#{$color-name} {
+        color: nth($color-values, $i);
+    }
+    .bg-#{$color-name} {
+        background: nth($color-values, $i);
+
+        > .drop {
+            @include text-shadow(longdrop(
+                darken(nth($color-values, $i), 10),
+                darken(nth($color-values, $i), 10),
+                150));
+        }
+    }
+}
+
