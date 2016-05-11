@@ -1,1 +1,2 @@
+jekyll build
 rsync -avz ./_site/ jasper.wtf:app
