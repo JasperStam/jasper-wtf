@@ -2,6 +2,7 @@ body {
     font-family: $font-family;
     background: $color-white;
     color: $color-gray;
+    overflow-y: scroll;
 }
 
 .wrapper {
