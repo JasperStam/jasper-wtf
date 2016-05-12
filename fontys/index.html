@@ -9,10 +9,10 @@ layout: default
     <div class="tags width-full"></div>
  -->    <div class="post-container margin-top-30">
         {% for post in site.posts %}
-        <a href="{{ post.url }}" class="post margin-bottom-50 bg-{% cycle
-        'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal',
-        'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange' %}">
-            <h3 class="text-uppercase text-medium-small color-white drop-color">{{ post.title }}</h3>
+        {% capture post_color %}{% cycle 'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange' %}{% endcapture %}
+        <a href="{{ post.url }}?post_color={{ post_color }}"
+           class="_post post-preview margin-bottom-50 bg-{{ post_color }}">
+            <h3 class="_post-head text-uppercase text-size-2-5 small color-white drop-color">{{ post.title }}</h3>
         </a>
         {% endfor %}
     </div>

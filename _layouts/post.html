@@ -5,10 +5,14 @@ layout: default
 {% include sidebar.html %}
 
 <main class="section">
-    <h1 class="text-bigger text-uppercase">{{ page.title }}</h1>
-    <p class="font-amaranth">{{ page.date | date: '%B %-d, %Y' }}</p>
-    <a href="/fontys" class="back"><<</a>
-    <div class="margin-top-30"?>
-        {{ content }}
+    <div class="_header post-header bg-medium-gray">
+        <h1 class="text-massive text-uppercase color-white drop-color">{{ page.title }}</h1>
+        <p class="font-amaranth color-white">{{ page.date | date: '%B %-d, %Y' }}</p>
+    </div>
+    <div class="_content">
+        <a href="/fontys" class="back"><<</a>
+        <div class="margin-top-30"?>
+            {{ content }}
+        </div>
     </div>
 </main>

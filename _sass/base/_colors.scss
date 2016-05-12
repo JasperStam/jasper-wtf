@@ -1,4 +1,5 @@
 $color-light-gray: #CBCBCB;
+$color-medium-gray: #666;
 $color-gray: #222;
 $color-darken: rgba(0, 0, 0, 0.1);
 $color-black: #000;
@@ -22,7 +23,7 @@ $color-orange: #F57C00;
 $color-deep-orange: #E64A19;
 
 // Duplicate, but it works
-$color-list: 'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green',
+$color-list: 'medium-gray', 'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green',
     'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange';
-$color-values: #D32F2F, #C2185B, #7B1FA2, #512DA8, #303F9F, #1976D2, #0288D1, #0097A7, #00796B, #388E3C,
+$color-values: #666, #D32F2F, #C2185B, #7B1FA2, #512DA8, #303F9F, #1976D2, #0288D1, #0097A7, #00796B, #388E3C,
     #689F38, #AFB42B, #FBC02D, #FFA000, #F57C00, #E64A19;
