@@ -25,3 +25,7 @@
 .drop-diagonal {
     @include text-shadow(longdrop($color-gray, $color-gray, 400));
 }
+
+.drop-darken {
+    @include text-shadow(longdrop($color-darken, $color-darken, 150));
+}

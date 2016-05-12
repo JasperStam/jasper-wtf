@@ -58,7 +58,7 @@
     .bg-#{$color-name} {
         background: nth($color-values, $i);
 
-        > .drop {
+        > .drop-color {
             @include text-shadow(longdrop(
                 darken(nth($color-values, $i), 10),
                 darken(nth($color-values, $i), 10),
