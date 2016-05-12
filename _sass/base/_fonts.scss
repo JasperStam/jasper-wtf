@@ -19,6 +19,17 @@
 }
 
 @font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/Titillium-Regular.eot');
+    src: url('../fonts/Titillium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Titillium-Regular.woff') format('woff'),
+        url('../fonts/Titillium-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Fira Sans';
     src: url('../fonts/FiraSans-Regular.eot');
     src: url('../fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
@@ -39,4 +50,4 @@
 }
 
 
-$font-family: 'Fira Sans', sans-serif;
+$font-family: 'Titillium', sans-serif;

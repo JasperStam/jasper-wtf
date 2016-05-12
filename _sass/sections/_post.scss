@@ -18,19 +18,25 @@
 }
 
 .post-content {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    font-family: 'Titillium';
+
     h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
+
     h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
+
     h3 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
+
     h1, h2, h3 {
-        font-family: 'Fira Sans';
-        font-weight: bold;
-        margin-bottom: 10px;
+        font-family: 'Amaranth';
+        margin-bottom: 5px;
     }
 
     p {
