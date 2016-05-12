@@ -8,7 +8,7 @@ layout: default
 <!--     <input type="search" class="width-full search-main color-gray" placeholder="Filter op rubrics">
     <div class="tags width-full"></div>
  -->    <div class="_container post-container margin-top-30">
-        {% for post in site.posts %}
+        {% for post in site.posts reversed %}
         {% capture post_color %}{% cycle 'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange' %}{% endcapture %}
         <a href="{{ post.url }}?post_color={{ post_color }}"
            class="_post post-hoverable post-preview margin-bottom-50 bg-{{ post_color }}">

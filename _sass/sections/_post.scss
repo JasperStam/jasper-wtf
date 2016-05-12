@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 50vh;
 }
 
 .post-preview {
@@ -14,7 +15,39 @@
     > h3 {
         transition: font-size 0.3s ease-out;
     }
+}
 
+.post-content {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    h1, h2, h3 {
+        font-family: 'Fira Sans';
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: square;
+    }
+
+    li {
+        margin: 0 0 10px 20px;
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .post-hoverable {

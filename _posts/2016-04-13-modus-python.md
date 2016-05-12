@@ -13,6 +13,6 @@ Er zijn al heel veel stukken open source software gemaakt om het ontwikkelen mak
 
 Hiernaast is SQLAlchemy gebruikt een microframework wat data uit de database (objects) koppelt met virtuele en programmeerbare modellen, een ORM. De databasekoppeling is ook goed geabstraheerd. Voorlopig gebruikt de backend nog SQLite (database in een bestand), omdat dit simpel is en heel weinig serverconfiguratie vereist, maar een overstap naar PostgreSQL moet door het gebruik van SQLAlchemy in de toekomst zeer makkelijk worden. 
 
-De ontwikkeling van de python backend is hier te volgen: https://github.com/JasperStam/nfc-timetracking/tree/master/api
+De ontwikkeling van de python backend is te volgen op [Github.](https://github.com/JasperStam/nfc-timetracking/tree/master/api)
 
 
