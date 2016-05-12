@@ -39,9 +39,12 @@ var renderPost = function(e) {
         // Remove all other posts .post where not ._busy
         $('._container > ._post').remove();
 
+        // Scroll to top of new post
+        $('html, body').scrollTop(0);
+
         // Prepare the fake container to be transformed in the real container
         $container.removeClass('post-container-fake height-0');
-        $container.addClass('_content');
+        $container.addClass('_content post-content');
         $container.removeClass('loading');
         $container.append(content);
 
