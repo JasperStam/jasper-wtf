@@ -22,55 +22,6 @@
     }
 }
 
-main.section {
-    margin: 30px 0;
-    height: calc(100% - 60px);
-    position: relative;
-}
-
-.border-white {
-    border: 3px solid $color-white;
-}
-
 .drop-diagonal {
     @include text-shadow(longdrop($color-gray, $color-gray, 400));
-}
-
-.hover-black {
-    transition: color 0.1s ease-out, text-shadow 0.1s ease-out;
-    &:hover {
-        text-shadow: 1px 1px 0px $color-white;
-    }
-}
-
-.search-main {
-    border: none;
-    font-size: 1.5em;
-    font-family: 'Fira Sans';
-}
-
-.post-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.post {
-    overflow: hidden;
-    width: 45%;
-    height: 200px;
-    padding: 40px;
-    font-size: 2em;
-    transition: all 0.1s ease-out;
-
-    &:hover {
-        filter: brightness(1.1);
-        padding: 40px 40px 40px 50px;
-    }
-}
-
-.back {
-    position: absolute;
-    left: -40px;
-    top: 20px;
 }
