@@ -17,6 +17,9 @@ De hoogtemeter moest aan de volgende eisen voldoen:
 - Data moet uit te lezen zijn.
 
 
+![Rocketkitz arduino]({{ site.url }}/assets/pictures/render-rocketkitz-1.png)
+
+
 Om het geheel aan te drijven is gekozen voor een Arduino pro micro. Dit is een makkelijk uit te bereiden computertje met een kleine form factor. De arduino pro mini wordt eerder aanbevolen, maar omdat de data makkelijk uitleesbaar dient te zijn is gekozen voor de pro micro, omdat deze beschikt over een USB aansluiten. 
 
 

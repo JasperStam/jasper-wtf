@@ -53,6 +53,14 @@
             margin-bottom: 20px;
         }
     }
+
+    img {
+        max-width: 100%;
+
+        &.img-small {
+            max-width: 50%;
+        }
+    }
 }
 
 .post-hoverable {
