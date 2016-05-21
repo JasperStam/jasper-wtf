@@ -7,8 +7,8 @@
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-maskedinput": "^3.1.2",
-    "react-chartjs": "0.7.3",
-    "chart.js": "1.1.1"
+    "react-chartjs": "git@github.com:jhudson8/react-chartjs.git#c711d756f8e447625ce5112985f8bd1ddd144186",
+    "chart.js": "2.1.3"
   },
   "devDependencies": {
     "babel-core": "6.7.6",
