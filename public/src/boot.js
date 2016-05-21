@@ -7,7 +7,8 @@ import Chart from 'chart.js';
 import 'style/variables.css';
 import 'style/reset.css';
 
-Chart.defaults.global.responsive = true;
+// Chart.defaults.global.responsive = true;
+// Chart.defaults.global.legend.display = false;
 
 // import 'react-select/dist/react-select.css';
 
