@@ -1,0 +1,16 @@
+{
+  "name": "jasper-wtf",
+  "version": "0.0.1",
+  "description": "The portfolio of Jasper Stam",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasperStam/jasper-wtf.git"
+  },
+  "author": "JasperStam",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "2.2.3",
+    "d3": "3.5.17"
+  }
+}
