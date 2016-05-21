@@ -1,0 +1,21 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight: 400;
+}
+
+th {
+    padding: 1rem;
+}
+
+tr {
+    border-top: 1px solid var(--off-white);
+}
+
+td {
+    padding: 1rem;
+    white-space: nowrap;
+}

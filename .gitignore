@@ -1,8 +1,4 @@
-.jekyll-metadata
 node_modules/
-.htaccess
-.DS_Store
-.sass-cache
-Gemfile.lock
-_site/
-_drafts/
+.env
+public/dist/
+*npm-debug.log
