@@ -1,18 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from 'container/App';
-import Chart from 'chart.js';
-// import 'moment-duration-format';
+import reducers from './reducers/index';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
 import 'style/variables.css';
 import 'style/reset.css';
 
-// Chart.defaults.global.responsive = true;
-// Chart.defaults.global.legend.display = false;
+let store = createStore(reducers);
 
-// import 'react-select/dist/react-select.css';
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('app')
 );
