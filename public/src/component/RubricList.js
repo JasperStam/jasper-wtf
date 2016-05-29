@@ -10,14 +10,14 @@ const liStyle = {
 };
 
 const RubricList = ({ rubrics }) => (
-  <ul style={ ulStyle }>
-    {rubrics.labels.map(rubric =>
-        <li
-            style={ liStyle }
-            key={ rubric }
-        >
-        {rubric}
-      </li>
+    <ul style={ ulStyle }>
+        {rubrics.labels.map(rubric =>
+            <li
+                style={ liStyle }
+                key={ rubric }
+            >
+            {rubric}
+        </li>
     )}
   </ul>
 );
