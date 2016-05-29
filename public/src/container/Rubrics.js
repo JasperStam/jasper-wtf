@@ -1,5 +1,6 @@
 import React from 'react';
-import RadarChart from 'component/RadarChart';
+// import RadarChart from 'component/RadarChart';
+import RubricList from 'component/RubricList';
 
 export default React.createClass({
     getInitialState() {
@@ -46,7 +47,7 @@ export default React.createClass({
     },
     render() {
         return (
-            <RadarChart rubrics={this.state.rubrics} />
+            <RubricList rubrics={this.state.rubrics} />
         );
     },
 });
