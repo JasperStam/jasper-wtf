@@ -1,23 +1,29 @@
 import React, { PropTypes } from 'react';
 
-const Rubric = ({ name, tasks }) => (
+const Rubric = ({ rubrics }) => (
     <div>
-        <h2>{ name }</h2>
-        <ul>
-            {tasks.map(task =>
-                    <li
-                        key={ task }
-                    >
-                    {task}
-                </li>
-            )}
-        </ul>
+        {rubrics.map(rubric =>
+            <div key={rubric}>
+                <h2>{ rubric.name }</h2>
+                <ul>
+                    {rubric.tasks.map(task =>
+                            <li
+                                key={ task }
+                            >
+                            {task}
+                        </li>
+                    )}
+                </ul>
+            </div>
+        )}
     </div>
 );
 
 Rubric.propTypes = {
-    name: PropTypes.string.isRequired,
-    tasks: PropTypes.array.isRequired,
+    rubrics: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        tasks: PropTypes.array.isRequired,
+    }).isRequired).isRequired,
 };
 
 export default Rubric;

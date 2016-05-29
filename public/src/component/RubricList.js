@@ -9,12 +9,13 @@ const liStyle = {
     width: '30%',
 };
 
-const RubricList = ({ rubrics }) => (
+const RubricList = ({ rubrics, onRubricClick }) => (
     <ul style={ ulStyle }>
         {rubrics.labels.map(rubric =>
             <li
                 style={ liStyle }
                 key={ rubric }
+                onClick={() => onRubricClick(rubric)}
             >
             {rubric}
         </li>
@@ -24,6 +25,7 @@ const RubricList = ({ rubrics }) => (
 
 RubricList.propTypes = {
     rubrics: PropTypes.object.isRequired,
+    onRubricClick: PropTypes.func.isRequired,
 };
 
 export default RubricList;
