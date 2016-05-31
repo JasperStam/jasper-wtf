@@ -1,7 +1,9 @@
 .header {
     color: white;
     background-color: var(--purple);
+    padding: 20px;
+    margin-bottom: 50px;
     font-size: 4em;
     text-align: center;
-
+    border-bottom: 3px solid black;
 }

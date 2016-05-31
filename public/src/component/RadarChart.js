@@ -33,9 +33,9 @@ export default React.createClass({
         );
     },
     chartOptions: {
-        animation: false,
         reverse: false,
-        // scaleShowLine: true,
+        // scaleShowLine: false,
+        // angleShowLineOut: false,
         scaleOverride: true,
         // Number - The number of steps in a hard coded scale
         scaleSteps: 2,
@@ -43,16 +43,15 @@ export default React.createClass({
         scaleStepWidth: 50,
         // Number - The scale starting value
         scaleStartValue: 0,
-        // angleShowLineOut: false,
         pointDotRadius: 5,
         pointDotStrokeWidth: 3,
-        pointLabelFontSize: 15,
+        pointLabelFontSize: 14,
         datasetStrokeWidth: 4,
         pointLabelFontFamily: "'Karla'",
         scaleFontFamily: "'Karla'",
-        angleLineColor: 'rgba(255,255,255,.2)',
-        scaleLineColor: 'rgba(255,255,255,.2)',
-        pointLabelFontColor: '#fff',
+        angleLineColor: 'rgba(0,0,0,0.2)',
+        scaleLineColor: 'rgba(0,0,0,0.2)',
+        pointLabelFontColor: '#000',
     },
     render() {
         return (
