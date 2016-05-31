@@ -2,7 +2,7 @@ import React from 'react';
 import Header from 'component/Header';
 import Rubrics from './Rubrics';
 import ActiveRubric from './ActiveRubric';
-// import styles from './App.css';
+import styles from './App.css';
 
 export default React.createClass({
     render() {
@@ -10,7 +10,7 @@ export default React.createClass({
             <div>
                 <Header />
                 <Rubrics />
-                <ActiveRubric />
+                <ActiveRubric className={styles['radar-container']} />
             </div>
         );
     },

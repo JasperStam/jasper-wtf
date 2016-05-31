@@ -34,6 +34,7 @@ export default React.createClass({
     },
     chartOptions: {
         animation: false,
+        reverse: false,
         // scaleShowLine: true,
         scaleOverride: true,
         // Number - The number of steps in a hard coded scale
@@ -44,13 +45,26 @@ export default React.createClass({
         scaleStartValue: 0,
         // angleShowLineOut: false,
         pointDotRadius: 5,
-        pointDotStrokeWidth: 5,
+        pointDotStrokeWidth: 3,
         pointLabelFontSize: 15,
+        datasetStrokeWidth: 4,
         pointLabelFontFamily: "'Karla'",
         scaleFontFamily: "'Karla'",
-        angleLineColor: 'rgba(0,0,0,.1)',
+        angleLineColor: 'rgba(255,255,255,.2)',
+        scaleLineColor: 'rgba(255,255,255,.2)',
+        pointLabelFontColor: '#fff',
     },
     render() {
-        return <Radar className={styles['radar-chart']} ref="chart" redraw data={this.props.rubrics} options={this.chartOptions} />;
+        return (
+            <div className={styles['radar-container']}>
+                <Radar
+                    className={styles['radar-chart']}
+                    ref="chart"
+                    redraw
+                    data={this.props.rubrics}
+                    options={this.chartOptions}
+                />
+            </div>
+        );
     },
 });
