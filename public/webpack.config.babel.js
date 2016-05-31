@@ -61,13 +61,6 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel',
             }, {
-                // Extract all non-CSS and non-JS assets.
-                test: /\.(gif|png|jpe?g|svg|ico|woff|ttf|mp3)$/i,
-                loader: 'file',
-                query: {
-                    name: `[name]-${IS_DEV_SERVER ? 'dev' : '[hash:7]'}.[ext]`,
-                },
-            }, {
                 test: /\.css$/,
                 exclude: /node_modules/,
                 loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
@@ -75,6 +68,13 @@ module.exports = {
                 test: /\.css$/,
                 include: /node_modules/,
                 loader: 'style!css-loader',
+            }, {
+                // Extract all non-CSS and non-JS assets.
+                test: /\.(gif|png|jpe?g|svg|ico|woff|woff2|ttf|mp3)$/i,
+                loader: 'file',
+                query: {
+                    name: `[name]-${IS_DEV_SERVER ? 'dev' : '[hash:7]'}.[ext]`,
+                },
             },
         ],
     },
