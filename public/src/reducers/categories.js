@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 const categoriesBase = [
     // Fontys rubrics
     // { name: 'Artwork', start: 50 },

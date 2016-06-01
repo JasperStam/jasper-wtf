@@ -4,9 +4,9 @@ import projects from './projects';
 import activeCategory from './activeCategory';
 
 const reducers = combineReducers({
-    activeCategory,
     categories,
     projects,
+    activeCategory,
 });
 
 export default reducers;
