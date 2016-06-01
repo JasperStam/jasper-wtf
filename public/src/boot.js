@@ -1,5 +1,5 @@
 import React from 'react';
-import App from 'container/App';
+import App from 'component/App';
 import reducers from './reducers/index';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';

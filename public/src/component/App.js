@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from 'component/Header';
-import ActiveCategory from './ActiveCategory';
-import Categories from './Categories';
+import Header from './Header';
+import ActiveCategory from 'container/ActiveCategory';
+import Categories from 'container/Categories';
 import styles from './App.css';
 
 export default React.createClass({
