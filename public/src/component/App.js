@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import ActiveCategory from 'container/ActiveCategory';
 import Categories from 'container/Categories';
+import ProjectPosts from 'container/ProjectPosts';
 import styles from './App.css';
 
 export default React.createClass({
@@ -13,6 +14,7 @@ export default React.createClass({
                     <Categories className={styles['radar-container']} />
                     <ActiveCategory />
                 </div>
+                <ProjectPosts />
             </div>
         );
     },

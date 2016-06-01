@@ -11,6 +11,7 @@
     "react-chartjs": "git@github.com:jhudson8/react-chartjs.git#2aeca03709e2a67787e7d10947506cf49938a8e0",
     "react-redux": "4.4.5",
     "redux": "3.5.2",
+    "classnames": "2.2.5",
     "chart.js": "1.1.1",
     "react-highcharts": "8.3.2"
   },
