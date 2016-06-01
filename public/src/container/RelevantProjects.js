@@ -12,7 +12,7 @@ const getChartData = (state) => {
     const relevantProjects = getRelevantProjects(state);
     const relevantCategory = _.find(state.categories, c => c.name === state.activeCategory);
     const output = {
-        labels: ['5 years ago'],
+        labels: [''],
         datasets: [{ data: [relevantCategory.start] }],
     };
     let categoryProgress = relevantCategory.start;

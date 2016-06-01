@@ -1,5 +1,6 @@
 .radar-container {
     width: 50%;
+    padding: 20px;
     display: flex;
 }
 
