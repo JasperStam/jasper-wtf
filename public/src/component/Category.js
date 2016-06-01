@@ -4,7 +4,7 @@ const Category = ({ categories }) => (
     <div>
         {categories.map(category =>
             <div key={category}>
-                <h2>{ category.name }</h2>
+                <p>{ category.name }</p>
                 <ul>
                     {category.tasks.map(task =>
                             <li

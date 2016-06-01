@@ -9,8 +9,10 @@ export default React.createClass({
         return (
             <div>
                 <Header />
-                <ActiveCategory />
-                <Categories className={styles['radar-container']} />
+                <div className={styles['category-container']}>
+                    <Categories className={styles['radar-container']} />
+                    <ActiveCategory />
+                </div>
             </div>
         );
     },

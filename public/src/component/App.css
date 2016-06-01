@@ -1,3 +1,7 @@
 .layout {
     display: flex;
 }
+
+.category-container {
+    display: flex;
+}

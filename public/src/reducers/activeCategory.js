@@ -1,4 +1,4 @@
-const activeCategory = (state = 'HIDE_CATEGORY', action) => {
+const activeCategory = (state = 'Frontend', action) => {
     switch (action.type) {
         case 'SHOW_CATEGORY':
             return action.name;
