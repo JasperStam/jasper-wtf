@@ -1,29 +1,19 @@
 import React, { PropTypes } from 'react';
+import LineChart from './LineChart';
+import styles from './Category.css';
 
-const Category = ({ categories }) => (
-    <div>
-        {categories.map(category =>
-            <div key={category}>
-                <p>{ category.name }</p>
-                <ul>
-                    {category.tasks.map(task =>
-                            <li
-                                key={ task }
-                            >
-                            {task}
-                        </li>
-                    )}
-                </ul>
-            </div>
-        )}
+const Category = ({ category }) => (
+    <div className={styles['active-category-container']}>
+        <p>{ category.name }</p>
+        <LineChart />
     </div>
 );
 
 Category.propTypes = {
-    categories: PropTypes.arrayOf(PropTypes.shape({
+    category: PropTypes.shape({
         name: PropTypes.string.isRequired,
         tasks: PropTypes.array.isRequired,
-    }).isRequired).isRequired,
+    }).isRequired,
 };
 
 export default Category;
