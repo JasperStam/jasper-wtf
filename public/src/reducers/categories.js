@@ -23,41 +23,6 @@ const categoriesBase = [
     { name: 'Algorithms', start: 40 },
 ];
 
-const dummyProjects = [
-    {
-        categories: [
-            {
-                name: 'Design',
-                progress: 20,
-            },
-            {
-                name: 'Frontend',
-                progress: 60,
-            },
-            {
-                name: 'Backend',
-                progress: 50,
-            },
-            {
-                name: 'UI',
-                progress: 40,
-            },
-            {
-                name: 'Algorithms',
-                progress: 30,
-            },
-        ],
-    },
-];
-
-dummyProjects.forEach(project => {
-    project.categories.forEach(category => {
-        const targetCategory = _.find(categoriesBase, (c) => c.name === category.name);
-        targetCategory.result = targetCategory.result || targetCategory.start;
-        targetCategory.result += category.progress;
-    });
-});
-
 const categories = (state = [], action) => {
     switch (action.type) {
         default:

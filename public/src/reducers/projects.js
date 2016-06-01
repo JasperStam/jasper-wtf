@@ -1,21 +1,35 @@
-// const dummyProjects = [
-//     {
-//         rubrics: [
-//             {
-//                 name: 'Artwork',
-//                 progress: 20,
-//             },
-//         ],
-//     },
-// ];
+const projectsBase = [
+    {
+        categories: [
+            {
+                name: 'Design',
+                progress: 20,
+            },
+            {
+                name: 'Frontend',
+                progress: 60,
+            },
+            {
+                name: 'Backend',
+                progress: 50,
+            },
+            {
+                name: 'UI',
+                progress: 40,
+            },
+            {
+                name: 'Algorithms',
+                progress: 30,
+            },
+        ],
+    },
+];
 
-// const activeRubric = (state = 'HIDE_RUBRIC', action) => {
-//     switch (action.type) {
-//         case 'SHOW_RUBRIC':
-//             return action.name;
-//         default:
-//             return state;
-//     }
-// };
+const projects = (state = [], action) => {
+    switch (action.type) {
+        default:
+            return projectsBase;
+    }
+};
 
-// export default activeRubric;
+export default projects;
