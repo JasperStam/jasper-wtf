@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import { showRubric } from 'actions/index';
+import { showCategory } from 'actions/index';
 import RadarChart from 'component/RadarChart';
 
 const mapStateToProps = () => ({
-    rubrics: {
+    categories: {
         labels: [
             'Artwork',
             'Technische haalbaarheid',
@@ -45,14 +45,14 @@ const mapStateToProps = () => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    onRubricClick: (name) => {
-        dispatch(showRubric(name));
+    onCategoryClick: (name) => {
+        dispatch(showCategory(name));
     },
 });
 
-const Rubrics = connect(
+const Categories = connect(
   mapStateToProps,
   mapDispatchToProps
 )(RadarChart);
 
-export default Rubrics;
+export default Categories;

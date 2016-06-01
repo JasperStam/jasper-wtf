@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { categories } from './categories';
-import activeRubric from './activeRubric';
+import activeCategory from './activeCategory';
 
 const reducers = combineReducers({
-    activeRubric,
+    activeCategory,
     categories,
 });
 

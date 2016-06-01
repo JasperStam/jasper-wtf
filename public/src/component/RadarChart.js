@@ -5,8 +5,8 @@ import { helpers } from 'chart.js';
 
 export default React.createClass({
     propTypes: {
-        rubrics: PropTypes.object.isRequired,
-        onRubricClick: PropTypes.func.isRequired,
+        categories: PropTypes.object.isRequired,
+        onCategoryClick: PropTypes.func.isRequired,
     },
     componentDidMount() {
         // Needed for loading the fonts...
@@ -27,7 +27,7 @@ export default React.createClass({
                 const points = chart.getPointsAtEvent(e);
 
                 helpers.each(points, (activePoint) => {
-                    this.props.onRubricClick(activePoint.label);
+                    this.props.onCategoryClick(activePoint.label);
                 });
             }
         );
@@ -60,7 +60,7 @@ export default React.createClass({
                     className={styles['radar-chart']}
                     ref="chart"
                     redraw
-                    data={this.props.rubrics}
+                    data={this.props.categories}
                     options={this.chartOptions}
                 />
             </div>

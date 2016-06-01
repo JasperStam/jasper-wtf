@@ -1,4 +1,4 @@
-export const showRubric = (name) => ({
-    type: 'SHOW_RUBRIC',
+export const showCategory = (name) => ({
+    type: 'SHOW_CATEGORY',
     name,
 });

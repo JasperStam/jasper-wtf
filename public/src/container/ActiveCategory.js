@@ -22,22 +22,22 @@
 
 import { connect } from 'react-redux';
 // import { showRubric } from '../actions/index';
-import Rubric from 'component/Rubric';
+import Category from 'component/Category';
 
-const getActiveRubric = (activeRubric) => {
-    switch (activeRubric) {
-        case 'HIDE_RUBRIC':
+const getActiveCategory = (activeCategory) => {
+    switch (activeCategory) {
+        case 'HIDE_CATEGORY':
             return [];
         default:
             return [{
-                name: activeRubric,
+                name: activeCategory,
                 tasks: [],
             }];
     }
 };
 
 const mapStateToProps = (state) => ({
-    rubrics: getActiveRubric(state.activeRubric),
+    categories: getActiveCategory(state.activeCategory),
 });
 
 // const mapDispatchToProps = (dispatch) => ({
@@ -46,8 +46,8 @@ const mapStateToProps = (state) => ({
 //     },
 // });
 
-const ActiveRubric = connect(
+const ActiveCategory = connect(
   mapStateToProps
-)(Rubric);
+)(Category);
 
-export default ActiveRubric;
+export default ActiveCategory;

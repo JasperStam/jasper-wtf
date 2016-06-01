@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from 'component/Header';
-import Rubrics from './Rubrics';
-import ActiveRubric from './ActiveRubric';
+import ActiveCategory from './ActiveCategory';
+import Categories from './Categories';
 import styles from './App.css';
 
 export default React.createClass({
@@ -9,8 +9,8 @@ export default React.createClass({
         return (
             <div>
                 <Header />
-                <Rubrics />
-                <ActiveRubric className={styles['radar-container']} />
+                <ActiveCategory />
+                <Categories className={styles['radar-container']} />
             </div>
         );
     },

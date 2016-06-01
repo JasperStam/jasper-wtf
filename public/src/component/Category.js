@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 
-const Rubric = ({ rubrics }) => (
+const Category = ({ categories }) => (
     <div>
-        {rubrics.map(rubric =>
-            <div key={rubric}>
-                <h2>{ rubric.name }</h2>
+        {categories.map(category =>
+            <div key={category}>
+                <h2>{ category.name }</h2>
                 <ul>
-                    {rubric.tasks.map(task =>
+                    {category.tasks.map(task =>
                             <li
                                 key={ task }
                             >
@@ -19,11 +19,11 @@ const Rubric = ({ rubrics }) => (
     </div>
 );
 
-Rubric.propTypes = {
-    rubrics: PropTypes.arrayOf(PropTypes.shape({
+Category.propTypes = {
+    categories: PropTypes.arrayOf(PropTypes.shape({
         name: PropTypes.string.isRequired,
         tasks: PropTypes.array.isRequired,
     }).isRequired).isRequired,
 };
 
-export default Rubric;
+export default Category;
