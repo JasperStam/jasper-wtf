@@ -1,11 +1,13 @@
 import React, { PropTypes } from 'react';
 import styles from './RadarChart.css';
+import _ from 'lodash';
 import { Radar } from 'react-chartjs';
 import { helpers } from 'chart.js';
 
 export default React.createClass({
     propTypes: {
-        categories: PropTypes.object.isRequired,
+        datasets: PropTypes.array.isRequired,
+        labels: PropTypes.array.isRequired,
         onCategoryClick: PropTypes.func.isRequired,
     },
     componentDidMount() {
@@ -53,6 +55,27 @@ export default React.createClass({
         scaleLineColor: 'rgba(0,0,0,0.2)',
         pointLabelFontColor: '#000',
     },
+    addStylesToChartData(chartData) {
+        _.extend(chartData.datasets[0], {
+            label: 'Now',
+            fillColor: 'rgba(148,102,221,0.6)',
+            strokeColor: '#9466DD',
+            pointColor: '#9466DD',
+            pointHighlightStroke: '#9466DD',
+            pointStrokeColor: '#fff',
+            pointHighlightFill: '#fff',
+        });
+        _.extend(chartData.datasets[1], {
+            label: '2 years ago',
+            fillColor: 'rgba(0,0,0,0.6)',
+            strokeColor: '#000',
+            pointColor: '#000',
+            pointHighlightStroke: '#000',
+            pointStrokeColor: '#fff',
+            pointHighlightFill: '#fff',
+        });
+        return chartData;
+    },
     render() {
         return (
             <div className={styles['radar-container']}>
@@ -60,7 +83,7 @@ export default React.createClass({
                     className={styles['radar-chart']}
                     ref="chart"
                     redraw
-                    data={this.props.categories}
+                    data={this.addStylesToChartData(this.props)}
                     options={this.chartOptions}
                 />
             </div>
