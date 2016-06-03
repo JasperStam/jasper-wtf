@@ -4,4 +4,6 @@
 
 .category-container {
     display: flex;
+    /* To normalize dynamic lineChart height */
+    min-height: 350px;
 }
