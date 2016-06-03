@@ -1,8 +1,16 @@
+const flock = require('posts/flock.md');
+const wkdz = require('posts/wkdz.md');
+const addressBased = require('posts/addressBased.md');
+const rvi = require('posts/rvi.md');
+const rex = require('posts/rex.md');
+const dashboard = require('posts/dashboard.md');
+const modus = require('posts/modus.md');
+
 const base = [
     {
         id: 1,
         name: 'Flock',
-        description: '',
+        description: flock,
         completed: true,
         categories: [
             { name: 'Design', progress: 5 },
@@ -11,7 +19,7 @@ const base = [
     }, {
         id: 2,
         name: 'WKdZ',
-        description: '',
+        description: wkdz,
         completed: true,
         categories: [
             { name: 'Design', progress: 3 },
@@ -21,7 +29,7 @@ const base = [
     }, {
         id: 3,
         name: 'Address Based',
-        description: '',
+        description: addressBased,
         completed: true,
         categories: [
             { name: 'Design', progress: 8 },

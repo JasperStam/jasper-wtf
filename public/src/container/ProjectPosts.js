@@ -3,20 +3,18 @@ import ProjectOverview from 'component/ProjectOverview';
 import _ from 'lodash';
 
 const getRelevantProjects = (state) => (
-    _.filter(state.projects, project => (
+    _.filter(state.projects.reverse(), project => (
         _.find(project.categories, c => c.name === state.activeCategory)
     ))
 );
 
-const mapStateToProps = (state) => ({
-    projects: getRelevantProjects(state),
-});
+const getSortedProjects = (state) => (
+    _.sortBy(state.projects, project => -project.id)
+);
 
-// const mapDispatchToProps = (dispatch) => ({
-//     onTodoClick: (name) => {
-//         dispatch(showRubric(name));
-//     },
-// });
+const mapStateToProps = (state) => ({
+    projects: getSortedProjects(state),
+});
 
 const ProjectPosts = connect(
   mapStateToProps

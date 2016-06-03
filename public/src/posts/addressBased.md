@@ -1,0 +1,1 @@
+Mijn stageopdracht bij Code Yellow B.V., het ontwikkelen van een applicatie voor donateursretentie. Dit bevatte onder andere een planmodule met point-in-polygon detectie, encrypted data opslag, stepped syncing en een R-tree voor een snelle kaartweergave.

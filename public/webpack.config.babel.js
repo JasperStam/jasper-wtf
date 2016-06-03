@@ -69,8 +69,11 @@ module.exports = {
                 include: /node_modules/,
                 loader: 'style!css-loader',
             }, {
+                test: /\.md$/,
+                loader: 'html!markdown',
+            }, {
                 // Extract all non-CSS and non-JS assets.
-                test: /\.(gif|png|jpe?g|svg|ico|woff|woff2|ttf|mp3)$/i,
+                test: /\.(gif|png|jpe?g|svg|ico|woff|woff2|ttf|json)$/i,
                 loader: 'file',
                 query: {
                     name: `[name]-${IS_DEV_SERVER ? 'dev' : '[hash:7]'}.[ext]`,
