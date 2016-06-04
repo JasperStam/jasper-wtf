@@ -8,7 +8,7 @@ const Project = ({ name, completed, description, lastChild }) => (
         <Timeline completed={completed} lastChild={lastChild} />
         <div>
             <p>{ name } </p>
-            <div dangerouslySetInnerHTML={{__html:description}} className={styles.description}></div>
+            <div dangerouslySetInnerHTML={{ __html: description }} className={styles.description}></div>
         </div>
     </div>
 );
