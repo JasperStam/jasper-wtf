@@ -8,12 +8,12 @@ const getRelevantProjects = (state) => (
     ))
 );
 
-const getSortedProjects = (state) => (
-    _.sortBy(state.projects, project => -project.id)
-);
+// const getSortedProjects = (state) => (
+//     _.sortBy(state.projects, project => -project.id)
+// );
 
 const mapStateToProps = (state) => ({
-    projects: getSortedProjects(state),
+    projects: getRelevantProjects(state),
 });
 
 const ProjectPosts = connect(

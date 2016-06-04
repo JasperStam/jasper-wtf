@@ -1,1 +1,1 @@
-export const DEFAULT_CATEGORY = 'Frontend';
+export const DEFAULT_CATEGORY = 'Product';
