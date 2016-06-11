@@ -23,8 +23,9 @@
 const base = [
     {
         id: 1,
-        name: 'Klant brainstorm',
-        description: '',
+        name: 'CY brainstorm',
+        description: 'Eerste brainstorm met Code Yellow. Het bedrijf gaf aan dat ze verschillende time tracking oplossingen geprobeerd hadden, maar zonder veel succes.'
+        + 'In deze brainstorm is er gekeken naar de mogelijkheid van taken als fysiek object',
         completed: true,
         categories: [
             { name: 'Concept', progress: 10 },
@@ -32,7 +33,7 @@ const base = [
     }, {
         id: 2,
         name: 'Beneficial Intelligence',
-        description: '',
+        description: 'Trendonderzoek naar Beneficial Intelligence, het principe om machine learning in te zetten voor de gebruiker. Hier is gekeken naar bestaande voorbeelden van BI, en nagedacht of dit voor Modus ingezet kon worden.',
         completed: true,
         categories: [
             { name: 'Trends', progress: 10 },
@@ -40,7 +41,7 @@ const base = [
     }, {
         id: 3,
         name: 'VR Trendwatch',
-        description: '',
+        description: 'BI is volgens Ferry een macrotrend, om een wat kleinere trend te bekijken is er gekeken naar alle aspecten van de trend Virtual Reality en het Consumer Trend Canvas is hiervoor ingevuld',
         completed: true,
         categories: [
             { name: 'Trends', progress: 5 },
@@ -48,7 +49,7 @@ const base = [
     }, {
         id: 4,
         name: 'Lego usertest',
-        description: '',
+        description: 'Om het fysieke aspect van Modus te valideren is er heel vroeg in het proces een user test opgezet. Deze test werd opgezet om te kijken of fysieke time tracking minder snel vergeten werd. Na het uitvoeren van deze test is de feedback gebruikt voor de volgende iteratie.',
         completed: true,
         categories: [
             { name: 'User testing', progress: 10 },
@@ -66,7 +67,7 @@ const base = [
     }, {
         id: 6,
         name: 'RocketKitz presentatie',
-        description: '',
+        description: 'Presentatie voor Media Innovations om de voortgang van ons concept te laten zien.',
         completed: true,
         categories: [
             { name: 'Presentatie', progress: 20 },
@@ -172,6 +173,16 @@ const base = [
         completed: true,
         categories: [
             { name: 'Artwork', progress: 20 },
+        ],
+    }, {
+        id: 17,
+        name: 'Tag designer',
+        description: '',
+        completed: true,
+        categories: [
+            { name: 'Interface', progress: 10 },
+            { name: 'UX', progress: 5 },
+            { name: 'Product', progress: 5 },
         ],
     },
 ];
