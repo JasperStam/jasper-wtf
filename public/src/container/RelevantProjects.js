@@ -2,11 +2,13 @@ import { connect } from 'react-redux';
 import LineChart from 'component/LineChart';
 import _ from 'lodash';
 
-const getRelevantProjects = (state) => (
-    _.filter(state.projects, project => (
+const getRelevantProjects = (state) => {
+    const relevantProjects = _.filter(state.projects, project => (
         _.find(project.categories, c => c.name === state.activeCategory)
-    ))
-);
+    ));
+
+    return _.sortBy(relevantProjects, project => project.id);
+};
 
 const getChartData = (state) => {
     const relevantProjects = getRelevantProjects(state);
