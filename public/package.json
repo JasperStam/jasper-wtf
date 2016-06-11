@@ -48,10 +48,11 @@
     "npm": ">=2.14.7"
   },
   "scripts": {
-    "lint": "eslint *.js src && echo 'Linting succeeded.'",
+    "deploy": "npm run build && rsync -avz ./dist/ jasper.wtf:app",
     "build": "npm run -s lint && npm run -s clean && npm run -s build-js",
-    "build-js": "webpack --colors --progress --bail",
+    "lint": "eslint *.js src && echo 'Linting succeeded.'",
     "clean": "rm -rf dist/*",
+    "build-js": "webpack --colors --progress --bail",
     "start": ". ../.env; webpack-dev-server --output-public-path / --port $WTF_WEBPACK_PORT --host $WTF_WEBPACK_HOST"
   }
 }
