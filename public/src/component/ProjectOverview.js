@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import Project from './Project';
+import Project from '../container/Project';
 import styles from './ProjectOverview.css';
 
 const ProjectOverview = ({ projects }) => (

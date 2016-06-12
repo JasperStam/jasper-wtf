@@ -19,6 +19,7 @@ const base = [
         description: 'Trendonderzoek naar Beneficial Intelligence, het principe om machine learning in te zetten voor de gebruiker. Hier is gekeken naar bestaande voorbeelden van BI, en nagedacht of dit voor Modus ingezet kon worden.',
         completed: true,
         type: TYPE_DOWNLOAD,
+        url: 'Coolhunting_BI.pdf',
         categories: [
             { name: 'Trends', progress: 10 },
         ],
@@ -28,7 +29,8 @@ const base = [
         name: 'VR Trendwatch',
         description: 'BI is volgens Ferry een macrotrend, om een wat kleinere trend te bekijken is er gekeken naar alle aspecten van de trend Virtual Reality en het Consumer Trend Canvas is hiervoor ingevuld',
         completed: true,
-        type: TYPE_GALLERY,
+        type: TYPE_DOWNLOAD,
+        url: 'Canvas_VR.JPG',
         categories: [
             { name: 'Trends', progress: 5 },
         ],
@@ -61,6 +63,7 @@ const base = [
         description: 'Presentatie voor Media Innovations om de voortgang van ons concept te laten zien.',
         completed: true,
         type: TYPE_DOWNLOAD,
+        url: 'RocketKitz_Presentatie.pptx',
         categories: [
             { name: 'Presentatie', progress: 20 },
         ],
@@ -155,6 +158,7 @@ const base = [
         description: 'Ik miste nog UX bewijslast en had iets nodig om te onderzoeken. Daarom heb ik onderzoek gedaan naar de ideale feel van de tag. Hiervoor heb ik tags van verschillende vormen gekleid en laten voelen door meerdere personen.',
         completed: true,
         type: TYPE_DOWNLOAD,
+        url: 'Onderzoek_Productontwerp.pdf',
         categories: [
             { name: 'Onderzoek', progress: 10 },
             { name: 'UX', progress: 30 },
@@ -183,6 +187,7 @@ const base = [
         description: 'Voor de artwork rubric heb ik tot nu toe alleen nog maar renders gemaakt. Om ook grafisch werk in mijn portfolio op te nemen heb ik de poster ontworpen die we tijdens de markt lieten zien.',
         completed: true,
         type: TYPE_DOWNLOAD,
+        url: 'Poster.pdf',
         categories: [
             { name: 'Artwork', progress: 20 },
         ],
