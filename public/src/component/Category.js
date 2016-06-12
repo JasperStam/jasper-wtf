@@ -4,7 +4,7 @@ import styles from './Category.css';
 
 const Category = ({ category }) => (
     <div className={styles.container}>
-        <b className={styles.title}>{ category.name }</b>
+        <b className={styles.title}>Rubric: { category.name }</b>
         <RelevantProjects />
     </div>
 );
