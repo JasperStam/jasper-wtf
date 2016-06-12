@@ -48,7 +48,7 @@
     "npm": ">=2.14.7"
   },
   "scripts": {
-    "deploy": "npm run build && rsync -avz ./dist/ jasper.wtf:app",
+    "deploy": "npm run build && cp static/* dist/static && rsync -avz ./dist/ jasper.wtf:app",
     "build": "npm run -s lint && npm run -s clean && npm run -s build-js",
     "lint": "eslint *.js src && echo 'Linting succeeded.'",
     "clean": "rm -rf dist/*",
