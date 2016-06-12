@@ -1,4 +1,4 @@
-import { DEFAULT_CATEGORY } from 'constant/index';
+import { DEFAULT_CATEGORY } from '../constants';
 import projectReducer from './projects';
 import _ from 'lodash';
 

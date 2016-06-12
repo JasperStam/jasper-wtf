@@ -1,4 +1,4 @@
-import { DEFAULT_CATEGORY } from 'constant/index';
+import { DEFAULT_CATEGORY } from '../constants';
 
 const activeCategory = (state = DEFAULT_CATEGORY, action) => {
     switch (action.type) {
