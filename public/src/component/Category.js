@@ -3,8 +3,8 @@ import RelevantProjects from 'container/RelevantProjects';
 import styles from './Category.css';
 
 const Category = ({ category }) => (
-    <div className={styles['active-category-container']}>
-        <p>{ category.name }</p>
+    <div className={styles.container}>
+        <b className={styles.title}>{ category.name }</b>
         <RelevantProjects />
     </div>
 );

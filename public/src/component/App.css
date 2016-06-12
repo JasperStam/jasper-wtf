@@ -3,7 +3,12 @@
 }
 
 .category-container {
-    display: flex;
     /* To normalize dynamic lineChart height */
     min-height: 350px;
+}
+
+@media (min-width: 1000px) {
+    .category-container {
+        display: flex;
+    }
 }

@@ -57,7 +57,7 @@ export default React.createClass({
     },
     addStylesToChartData(chartData) {
         _.extend(chartData.datasets[0], {
-            label: 'Now',
+            label: 'Nu',
             fillColor: 'rgba(148,102,221,0.6)',
             strokeColor: '#9466DD',
             pointColor: '#9466DD',
@@ -66,7 +66,7 @@ export default React.createClass({
             pointHighlightFill: '#fff',
         });
         _.extend(chartData.datasets[1], {
-            label: '2 years ago',
+            label: 'Voor de periode',
             fillColor: 'rgba(0,0,0,0.6)',
             strokeColor: '#000',
             pointColor: '#000',
@@ -79,6 +79,7 @@ export default React.createClass({
     render() {
         return (
             <div className={styles['radar-container']}>
+                <b className={styles.title}>Rubrics overall</b>
                 <Radar
                     className={styles['radar-chart']}
                     ref="chart"
