@@ -91,7 +91,7 @@ const base = [
             { name: 'Iteratief werken en reflectie', progress: 5 },
         ],
     }, {
-        id: 9,
+        id: 8,
         date: '2016-04-13',
         name: 'Modus Python',
         description: 'Na twee user tests met de client side NodeJS versie van Modus is gekozen voor een betere aanpak. Timestamps client side opslaan is niet betrouwbaar genoeg. In deze versie is gekozen voor een Python + Flask + SQLAlchemy backend. Dit was een goede kans is om een nieuwe taal te leren en nodig voor betrouwbare timestamps.',
@@ -104,7 +104,7 @@ const base = [
             { name: 'Iteratief werken en reflectie', progress: 10 },
         ],
     }, {
-        id: 10,
+        id: 9,
         date: '2016-04-19',
         name: 'RocketKitz arduino',
         description: 'Voor ons Media Innovatie project, hebben we gekozen om geen werkende versie te maken. Wel was het nodig om aan het nerding aspect te voldoen. Hiervoor is gekeken naar alle hardware die nodig was voor een werkende versie en een render gemaakt om een beeld te krijgen.',
@@ -115,7 +115,7 @@ const base = [
             { name: 'Onderzoek', progress: 15 },
         ],
     }, {
-        id: 8,
+        id: 10,
         date: '2016-04-20',
         name: 'Modus renders',
         description: 'Op dit moment was Modus alleen getest met versies waar nog niet over het uiterlijk is nagedacht. Om klanten een idee te geven van het eindproduct, heb ik een 3d model van tags en het dock gemodeleerd in Sketchup. Met behulp van VRay zijn hier renders van gemaakt.',

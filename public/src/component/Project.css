@@ -1,5 +1,26 @@
-.project {
+.flex {
     display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    border-bottom: 3px solid black;
+}
+
+.container {
+    display: flex;
+}
+
+.date {
+
+}
+
+.data {
+    width: 150px;
 }
 
 .description {

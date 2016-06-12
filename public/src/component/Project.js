@@ -3,12 +3,17 @@ import Timeline from './Timeline';
 // import classNames from 'classnames';
 import styles from './Project.css';
 
-const Project = ({ name, completed, description, lastChild }) => (
-    <div className={styles.project} >
+const Project = ({ name, completed, description, date, lastChild }) => (
+    <div className={styles.flex} >
         <Timeline completed={completed} lastChild={lastChild} />
-        <div>
-            <p>{ name } </p>
-            <div className={styles.description}>{ description }</div>
+        <div className={styles.flexColumn}>
+            <b className={styles.title}>{ name } </b>
+            <div className={styles.flex}>
+                <div className={styles.data}>
+                    <p className={styles.date}>{date}</p>
+                </div>
+                <div className={styles.description}>{ description }</div>
+            </div>
         </div>
     </div>
 );
