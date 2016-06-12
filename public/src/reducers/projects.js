@@ -58,7 +58,7 @@ const base = [
     }, {
         id: 5,
         name: 'Planning concept',
-        description: '',
+        description: 'Uren bijhouden is meestal iets wat van de baas moet. De werknemer heeft er meestal niks aan, hier willen we met Modus verandering in brengen. Het idee was om een AI component in Modus in te bouwen, wat men suggesties gaf voor pauzes. Deze suggesties worden gebaseerd op waargenomen pause intervals die een hogere productiviteit opleveren. Productiviteit wordt gemeten door een combinatie van aantal commits en hoeveelheid code.',
         completed: true,
         categories: [
             { name: 'Trends', progress: 5 },
@@ -75,7 +75,7 @@ const base = [
     }, {
         id: 7,
         name: 'Modus NodeJS',
-        description: '',
+        description: 'De eerste werkende versie van modus. Hiervoor is gekozen voor NodeJS, aangezien deze snel is op te zetten en ik hier al veel ervaring mee heb.',
         completed: true,
         categories: [
             { name: 'Werking product', progress: 20 },
@@ -85,25 +85,17 @@ const base = [
         ],
     }, {
         id: 8,
-        name: 'Concept verbetering',
-        description: '',
-        completed: true,
-        categories: [
-            { name: 'Concept', progress: 10 },
-        ],
-    }, {
-        id: 9,
         name: 'Modus renders',
-        description: '',
+        description: 'Op dit moment was Modus alleen getest met versies waar nog niet over het uiterlijk is nagedacht. Om klanten een idee te geven van het eindproduct, heb ik een 3d model van tags en het dock gemodeleerd in Sketchup. Met behulp van VRay zijn hier renders van gemaakt.',
         completed: true,
         categories: [
             { name: 'Artwork', progress: 10 },
             { name: 'Onderzoek', progress: 15 },
         ],
     }, {
-        id: 10,
+        id: 9,
         name: 'Modus Python',
-        description: '',
+        description: 'Na twee user tests met de client side NodeJS versie van Modus is gekozen voor een betere aanpak. Timestamps client side opslaan is niet betrouwbaar genoeg. In deze versie is gekozen voor een Python + Flask + SQLAlchemy backend. Dit was een goede kans is om een nieuwe taal te leren en nodig voor betrouwbare timestamps.',
         completed: true,
         categories: [
             { name: 'Werking product', progress: 30 },
@@ -113,9 +105,9 @@ const base = [
             { name: 'Iteratief werken en reflectie', progress: 10 },
         ],
     }, {
-        id: 11,
+        id: 10,
         name: 'RocketKitz arduino',
-        description: '',
+        description: 'Voor ons Media Innovatie project, hebben we gekozen om geen werkende versie te maken. Wel was het nodig om aan het nerding aspect te voldoen. Hiervoor is gekeken naar alle hardware die nodig was voor een werkende versie en een render gemaakt om een beeld te krijgen.',
         completed: true,
         categories: [
             { name: 'Werking product', progress: 10 },
@@ -123,9 +115,9 @@ const base = [
             { name: 'Onderzoek', progress: 15 },
         ],
     }, {
-        id: 12,
+        id: 11,
         name: 'Usertest Less or More 1',
-        description: '',
+        description: 'Voor deze user test is gekozen om een ander type gebruiker te testen. Dit was de eerste user test bij het bedrijf Less or More, een maatwerk website bedrijf wat uurtje factuurtje werkt. Dit was hun eerste aanraking met Modus en zorgde voor extreem positieve feedback. Dit gaf ons ook inzicht over mogelijke wensen voor de tags.',
         completed: true,
         categories: [
             { name: 'User testing', progress: 20 },
@@ -133,9 +125,17 @@ const base = [
             { name: 'Iteratief werken en reflectie', progress: 10 },
         ],
     }, {
+        id: 12,
+        name: 'Concept verbetering',
+        description: 'Naar aanleiding van de afgelopen 2 user tests is er gekozen om ons concept iets aan te passen. Bij Code Yellow wordt er met tickets gewerkt, taken binnen een project. In de versie die daar getest is, werden de tags gekoppeld aan een ticket. Hierdoor kwam het fysieke aspect van Modus niet goed tot uiting, omdat de mentale link tussen tag en ticket te zwak was door een overschot aan tickets. Door successvolle tests met Less or More waar tijd bijhouden per project gaat, is er gekozen om tags te koppelen aan een project, niet aan een taak.',
+        completed: true,
+        categories: [
+            { name: 'Concept', progress: 10 },
+        ],
+    }, {
         id: 13,
         name: 'Usertest Less or More 2',
-        description: '',
+        description: 'De tweede usertest bij Less or More. De feedback van user test 1 is inmiddels geimplementeerd. Deze user test was achteraf niet extreem nuttig, aangezien alleen positieve dingen naar voren kwamen, geen aspecten die verbeterd konden worden.',
         completed: true,
         categories: [
             { name: 'User testing', progress: 20 },
@@ -145,7 +145,7 @@ const base = [
     }, {
         id: 14,
         name: 'Onderzoek tags',
-        description: 'Met klei',
+        description: 'Ik miste nog UX bewijslast en had iets nodig om te onderzoeken. Daarom heb ik onderzoek gedaan naar de ideale feel van de tag. Hiervoor heb ik tags van verschillende vormen gekleid en laten voelen door meerdere personen.',
         completed: true,
         categories: [
             { name: 'Onderzoek', progress: 10 },
@@ -158,7 +158,7 @@ const base = [
     }, {
         id: 15,
         name: '3d printen tags',
-        description: '3d printen, meerdere iteraties',
+        description: 'Nu er duidelijkheid was over de gewenste feel van de tag, kon er een productiesample van worden gemaakt. Hier zijn in totaal 3 iteraties van gemodelleerd in Blender. De eerste iteratie is geprint op de Fontys, de volgende 2 bij Shapeways.',
         completed: true,
         categories: [
             { name: 'Onderzoek', progress: 10 },
@@ -169,7 +169,7 @@ const base = [
     }, {
         id: 16,
         name: 'Poster',
-        description: '',
+        description: 'Voor de artwork rubric heb ik tot nu toe alleen nog maar renders gemaakt. Om ook grafisch werk in mijn portfolio op te nemen heb ik de poster ontworpen die we tijdens de markt lieten zien.',
         completed: true,
         categories: [
             { name: 'Artwork', progress: 20 },
@@ -177,7 +177,7 @@ const base = [
     }, {
         id: 17,
         name: 'Tag designer',
-        description: '',
+        description: 'Deze periode had ik nog geen interface ontworpen. Aangezien ik het ontwerpen van de tags bezig ben geweest, leek het me verstandig om een interface te ontwerpen waar klanten hun tags mee konden ontwerpen en bestellen.',
         completed: true,
         categories: [
             { name: 'Interface', progress: 10 },

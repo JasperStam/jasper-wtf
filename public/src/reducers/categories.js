@@ -10,7 +10,7 @@ const categoriesBase = [
     { name: 'Documentatie', start: 30 },
     { name: 'Concept', start: 40 },
     { name: 'Presentatie', start: 30 },
-    { name: 'Interface', start: 60 },
+    { name: 'Interface', start: 70 },
     { name: 'UX', start: 30 },
     { name: 'User testing', start: 20 },
     // Portfolio categories
