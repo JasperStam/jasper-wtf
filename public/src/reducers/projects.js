@@ -80,6 +80,8 @@ const base = [
         description: 'De eerste werkende versie van modus. Hiervoor is gekozen voor NodeJS, aangezien deze snel is op te zetten en ik hier al veel ervaring mee heb.',
         completed: true,
         type: TYPE_EXTERNAL,
+        url: 'https://github.com/JasperStam/nfc-timetracking/blob/db9502747b0039fce35cefb96ede1fb40ca56b14/server.js',
+        urlDescription: 'nfc-timetracking/server.js',
         categories: [
             { name: 'Werking product', progress: 20 },
             { name: 'Technische haalbaarheid', progress: 5 },
@@ -93,6 +95,8 @@ const base = [
         description: 'Na twee user tests met de client side NodeJS versie van Modus is gekozen voor een betere aanpak. Timestamps client side opslaan is niet betrouwbaar genoeg. In deze versie is gekozen voor een Python + Flask + SQLAlchemy backend. Dit was een goede kans is om een nieuwe taal te leren en nodig voor betrouwbare timestamps.',
         completed: true,
         type: TYPE_EXTERNAL,
+        url: 'https://github.com/JasperStam/nfc-timetracking/tree/master/api',
+        urlDescription: 'nfc-timetracking/api',
         categories: [
             { name: 'Werking product', progress: 30 },
             { name: 'Technische haalbaarheid', progress: 20 },
