@@ -4,6 +4,7 @@
     justify-content: space-around;
     flex-direction: column;
     position: fixed;
+    padding: 20px 40px;
     z-index: 6;
     background-color: rgba(0,0,0,0.8);
     top: 0;
@@ -46,7 +47,8 @@
     position: relative;
     background-color: white;
     border: 3px solid black;
-    margin: 20px 40px;
+    display: inline-block;
+    margin: auto;
     overflow: hidden;
 }
 

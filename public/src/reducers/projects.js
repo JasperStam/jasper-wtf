@@ -115,8 +115,6 @@ const base = [
         images: [
             'ROCKETKITZ_0.png',
             'ROCKETKITZ_1.png',
-            'ROCKETKITZ_2.png',
-            'ROCKETKITZ_3.png',
         ],
         categories: [
             { name: 'Werking product', progress: 10 },
