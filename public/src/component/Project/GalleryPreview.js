@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import styles from './Preview.css';
 
-export default React.createClass({
-    render() {
-        return (
-            <div>
-            </div>
-        );
-    },
-});
+const GalleryPreview = ({ previewUrl }) => (
+    <img src={`static/${previewUrl}`} className={styles.imagePreview} />
+);
+
+GalleryPreview.propTypes = {
+    previewUrl: PropTypes.string.isRequired,
+};
+
+export default GalleryPreview;

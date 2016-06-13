@@ -10,6 +10,11 @@
 .title {
 }
 
+.contents {
+    padding-left: 40px;
+    max-width: 300px;
+}
+
 .container {
     display: flex;
 }

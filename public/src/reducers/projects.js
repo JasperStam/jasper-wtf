@@ -41,6 +41,12 @@ const base = [
         description: 'Om het fysieke aspect van Modus te valideren is er heel vroeg in het proces een user test opgezet. Deze test werd opgezet om te kijken of fysieke time tracking minder snel vergeten werd. Na het uitvoeren van deze test is de feedback gebruikt voor de volgende iteratie.',
         completed: true,
         type: TYPE_GALLERY,
+        images: [
+            'LEGO_0.jpg',
+            'LEGO_1.jpg',
+            'LEGO_2.JPG',
+            'LEGO_3.JPG',
+        ],
         categories: [
             { name: 'User testing', progress: 10 },
             { name: 'Iteratief werken en reflectie', progress: 10 },
@@ -101,6 +107,12 @@ const base = [
         description: 'Voor ons Media Innovatie project, hebben we gekozen om geen werkende versie te maken. Wel was het nodig om aan het nerding aspect te voldoen. Hiervoor is gekeken naar alle hardware die nodig was voor een werkende versie en een render gemaakt om een beeld te krijgen.',
         completed: true,
         type: TYPE_GALLERY,
+        images: [
+            'ROCKETKITZ_0.png',
+            'ROCKETKITZ_1.png',
+            'ROCKETKITZ_2.png',
+            'ROCKETKITZ_3.png',
+        ],
         categories: [
             { name: 'Werking product', progress: 10 },
             { name: 'Artwork', progress: 20 },
@@ -113,6 +125,11 @@ const base = [
         description: 'Op dit moment was Modus alleen getest met versies waar nog niet over het uiterlijk is nagedacht. Om klanten een idee te geven van het eindproduct, heb ik een 3d model van tags en het dock gemodeleerd in Sketchup. Met behulp van VRay zijn hier renders van gemaakt.',
         completed: true,
         type: TYPE_GALLERY,
+        images: [
+            'MODUS_RENDER_0.jpg',
+            'MODUS_RENDER_1.jpg',
+            'MODUS_RENDER_2.jpg',
+        ],
         categories: [
             { name: 'Artwork', progress: 10 },
             { name: 'Onderzoek', progress: 15 },
@@ -174,6 +191,12 @@ const base = [
         description: 'Nu er duidelijkheid was over de gewenste feel van de tag, kon er een productiesample van worden gemaakt. Hier zijn in totaal 3 iteraties van gemodelleerd in Blender. De eerste iteratie is geprint op de Fontys, de volgende 2 bij Shapeways.',
         completed: true,
         type: TYPE_GALLERY,
+        images: [
+            '3D_0.png',
+            '3D_1.jpg',
+            '3D_2.jpg',
+            '3D_3.png',
+        ],
         categories: [
             { name: 'Onderzoek', progress: 10 },
             { name: 'UX', progress: 5 },
