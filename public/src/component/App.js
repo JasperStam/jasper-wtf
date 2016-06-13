@@ -3,6 +3,7 @@ import Header from './Header';
 import ActiveCategory from 'container/ActiveCategory';
 import Categories from 'container/Categories';
 import ProjectPosts from 'container/ProjectPosts';
+import Gallery from 'container/Gallery';
 import styles from './App.css';
 
 export default React.createClass({
@@ -13,6 +14,12 @@ export default React.createClass({
                 <div className={styles['category-container']}>
                     <Categories className={styles['radar-container']} />
                     <ActiveCategory />
+                    <Gallery images={[
+                        'ROCKETKITZ_0.png',
+                        'ROCKETKITZ_1.png',
+                        'ROCKETKITZ_2.png',
+                        'ROCKETKITZ_3.png']}
+                    />
                 </div>
                 <ProjectPosts />
             </div>

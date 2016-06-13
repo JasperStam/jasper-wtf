@@ -1,0 +1,27 @@
+.modalBackground {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--purple-transparent);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal {
+    background-color: white;
+    border: 3px solid black;
+    margin: 20px 40px;
+    overflow: hidden;
+}
+
+.image {
+    display: none;
+    max-width: 100%;
+}
+
+.image:first-child {
+    display: block;
+}
