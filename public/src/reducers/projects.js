@@ -144,7 +144,12 @@ const base = [
         name: 'Usertest Less or More 1',
         description: 'Voor deze user test is gekozen om een ander type gebruiker te testen. Dit was de eerste user test bij het bedrijf Less or More, een maatwerk website bedrijf wat uurtje factuurtje werkt. Dit was hun eerste aanraking met Modus en zorgde voor extreem positieve feedback. Dit gaf ons ook inzicht over mogelijke wensen voor de tags.',
         completed: true,
-        type: TYPE_VOID,
+        type: TYPE_GALLERY,
+        images: [
+            'LESSORMORE_0.jpg',
+            'LESSORMORE_1.jpg',
+            'LESSORMORE_2.jpg',
+        ],
         categories: [
             { name: 'User testing', progress: 20 },
             { name: 'Presentatie', progress: 15 },
