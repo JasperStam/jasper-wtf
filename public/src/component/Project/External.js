@@ -4,7 +4,7 @@ import styles from './Preview.css';
 const External = ({ url, urlDescription }) => (
     <div>
         <b className={styles.block}>Bekijk de code op GitHub:</b>
-        <a href={`static/${url}`} target="_blank" className={styles.link}>{urlDescription}</a>
+        <a href={`${url}`} target="_blank" className={styles.link}>{urlDescription}</a>
     </div>
 );
 
