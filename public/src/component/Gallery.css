@@ -10,7 +10,32 @@
     height: 100vh;
 }
 
+.arrowContainer {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30px;
+    transition: all 0.3s ease-out;
+}
+.arrowContainer:hover {
+    background-color: black;
+    color: white;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+.arrow {
+    text-align: center;
+    font-size: 30px;
+}
+
 .modal {
+    position: relative;
     background-color: white;
     border: 3px solid black;
     margin: 20px 40px;
@@ -22,6 +47,6 @@
     max-width: 100%;
 }
 
-.image:first-child {
+.image:nth-child(3) {
     display: block;
 }
