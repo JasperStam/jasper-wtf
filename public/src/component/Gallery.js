@@ -3,13 +3,15 @@ import classNames from 'classnames';
 import Image from 'container/Gallery/Image';
 import styles from './Gallery.css';
 
-const Gallery = ({ show, images }) => (
+const Gallery = ({ show, images, closeGallery }) => (
     <div className={classNames(
-        styles.modalBackground,
-        { [styles.show]: show })}
+            styles.modalBackground,
+            { [styles.show]: show })
+        }
+        onClick={closeGallery}
     >
         <div className={styles.modal}>
-            <p className={styles.close}>X</p>
+            <p className={styles.close} onClick={closeGallery}>X</p>
             <div className={classNames(styles.arrowContainer, styles.left)}>
                 <p className={styles.arrow}> &#8647; </p>
             </div>
@@ -25,6 +27,7 @@ const Gallery = ({ show, images }) => (
 
 Gallery.propTypes = {
     show: PropTypes.bool.isRequired,
+    closeGallery: PropTypes.func.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

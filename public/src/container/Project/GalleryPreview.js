@@ -11,8 +11,14 @@ const Preview = React.createClass({
     getPreviewUrl() {
         return this.props.images[0];
     },
-    showGallery() {
+    showGallery(e) {
+        let mouseLeave = new MouseEvent('mouseleave', {
+            view: window,
+            bubbles: true,
+        });
         this.props.dispatchGallery(this.props.images);
+        e.currentTarget.dispatchEvent(mouseLeave);
+        // TODO: trigger mouseleave
     },
     render() {
         return (

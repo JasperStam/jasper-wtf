@@ -20,7 +20,7 @@ const gallery = (state = defaultState, action) => {
             };
         case 'HIDE_GALLERY':
         default:
-            return state;
+            return defaultState;
     }
 };
 
