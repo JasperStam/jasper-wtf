@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { hideGallery } from 'actions/index';
+import { hideGallery, nextImage, previousImage } from 'actions/index';
 import Gallery from 'component/Gallery';
 
 const mapStateToProps = (state) => ({
@@ -13,6 +13,12 @@ const mapDispatchToProps = (dispatch) => ({
     },
     clickModal(e) {
         e.stopPropagation();
+    },
+    previousImage: () => {
+        dispatch(previousImage());
+    },
+    nextImage: () => {
+        dispatch(nextImage());
     },
 });
 

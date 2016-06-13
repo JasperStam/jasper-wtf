@@ -12,11 +12,17 @@ const gallery = (state = defaultState, action) => {
                 images: action.images,
                 index: 0,
             };
-        case 'CHANGE_GALLERY_INDEX':
+        case 'NEXT_IMAGE':
             return {
                 show: true,
-                images: action.images,
-                index: action.index,
+                images: state.images,
+                index: state.index + 1,
+            };
+        case 'PREVIOUS_IMAGE':
+            return {
+                show: true,
+                images: state.images,
+                index: state.index + 1,
             };
         case 'HIDE_GALLERY':
         default:

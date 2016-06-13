@@ -8,10 +8,12 @@ export const showGallery = (images) => ({
     images,
 });
 
-export const changeIndex = (images, index) => ({
-    type: 'CHANGE_GALLERY_INDEX',
-    images,
-    index,
+export const previousImage = () => ({
+    type: 'PREVIOUS_IMAGE',
+});
+
+export const nextImage = () => ({
+    type: 'NEXT_IMAGE',
 });
 
 export const hideGallery = (images) => ({

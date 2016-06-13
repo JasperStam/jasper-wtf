@@ -3,7 +3,14 @@ import classNames from 'classnames';
 import Image from 'container/Gallery/Image';
 import styles from './Gallery.css';
 
-const Gallery = ({ show, images, closeGallery, clickModal }) => (
+const Gallery = ({
+    show,
+    images,
+    closeGallery,
+    clickModal,
+    nextImage,
+    previousImage,
+}) => (
     <div className={classNames(
             styles.modalBackground,
             { [styles.show]: show })
@@ -12,10 +19,10 @@ const Gallery = ({ show, images, closeGallery, clickModal }) => (
     >
         <div className={styles.modal} onClick={clickModal}>
             <p className={styles.close} onClick={closeGallery}>X</p>
-            <div className={classNames(styles.arrowContainer, styles.left)}>
+            <div className={classNames(styles.arrowContainer, styles.left)} onClick={previousImage}>
                 <p className={styles.arrow}> &#8647; </p>
             </div>
-            <div className={classNames(styles.arrowContainer, styles.right)}>
+            <div className={classNames(styles.arrowContainer, styles.right)} onClick={nextImage}>
                 <p className={styles.arrow}> &#8649; </p>
             </div>
             {images.map((image, i) =>
@@ -29,6 +36,8 @@ Gallery.propTypes = {
     show: PropTypes.bool.isRequired,
     closeGallery: PropTypes.func.isRequired,
     clickModal: PropTypes.func.isRequired,
+    nextImage: PropTypes.func.isRequired,
+    previousImage: PropTypes.func.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
