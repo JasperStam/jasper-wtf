@@ -1,9 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const Download = ({ url }) => (
-    <div>
-        <a href={`static/${url}`} target="_blank">Download - {url} </a>
-    </div>
+    <a href={`static/${url}`} target="_blank">Download - {url} </a>
 );
 
 Download.propTypes = {
