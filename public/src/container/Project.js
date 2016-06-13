@@ -1,5 +1,7 @@
 import { TYPE_GALLERY, TYPE_EXTERNAL, TYPE_DOWNLOAD, TYPE_VOID } from '../constants';
 import React, { PropTypes } from 'react';
+import moment from 'moment';
+import styles from 'component/Project/Preview.css';
 import Project from 'component/Project';
 import Download from 'component/Project/Download';
 import External from 'component/Project/External';
@@ -9,6 +11,7 @@ import Void from 'component/Project/Void';
 export default React.createClass({
     propTypes: {
         type: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
     },
     getSubview() {
         switch (this.props.type) {
@@ -24,9 +27,12 @@ export default React.createClass({
 
         }
     },
+    formatDate() {
+        return moment(this.props.date).format('DD-MM-YYYY');
+    },
     render() {
         return (
-            <Project subView={this.getSubview()} { ... this.props } />
+            <Project subView={this.getSubview()} readableDate={this.formatDate()} { ... this.props } />
         );
     },
 });

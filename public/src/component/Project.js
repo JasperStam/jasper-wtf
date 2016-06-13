@@ -3,17 +3,17 @@ import Timeline from './Timeline';
 // import classNames from 'classnames';
 import styles from './Project.css';
 
-const Project = ({ name, completed, description, date, lastChild, subView }) => (
+const Project = ({ name, completed, description, readableDate, lastChild, subView }) => (
     <div className={styles.flex} >
         <Timeline completed={completed} lastChild={lastChild} />
         <div className={styles.flexColumn}>
             <b className={styles.title}>{ name } </b>
             <div className={styles.flex}>
                 <div className={styles.data}>
-                    <p className={styles.date}>{date}</p>
+                    <p className={styles.date}>{readableDate}</p>
                 </div>
                 <div className={styles.description}>{ description }</div>
-                {subView}
+                <div className={styles.contents}>{subView}</div>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@ Project.propTypes = {
     completed: PropTypes.bool.isRequired,
     lastChild: PropTypes.bool.isRequired,
     subView: PropTypes.node.isRequired,
-    date: PropTypes.string.isRequired,
+    readableDate: PropTypes.string.isRequired,
 };
 
 export default Project;
