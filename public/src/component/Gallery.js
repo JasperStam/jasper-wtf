@@ -18,7 +18,7 @@ const Gallery = ({
         onClick={closeGallery}
     >
         <div className={styles.modal} onClick={clickModal}>
-            <p className={styles.close} onClick={closeGallery}>X</p>
+            <p className={styles.close} onClick={closeGallery}> &#215; </p>
             <div className={classNames(styles.arrowContainer, styles.left)} onClick={previousImage}>
                 <p className={styles.arrow}> &#8647; </p>
             </div>
