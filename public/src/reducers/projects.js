@@ -230,7 +230,9 @@ const base = [
         name: 'Portfolio',
         description: 'Voor mijn werk ben ik veel bezig met interfaces, voor het Fontys had ik deze periode echter nog geen interface ontworpen. Om mijn proces in PTM6 goed aan te tonen heb ik heel veel aandacht besteed aan de interface van mijn portfolio. Eerdere versies van mijn portfolio zijn gemaakt in blogformaat. Dit maakt het duidelijk om te zien wat ik precies gedaan heb, maar is niet heel gebruiksvriendelijk en belemmert de mogelijkheid tot het reflecteren. Dit portfolio is gemaakt voor de gebruiker. Om een beeld te krijgen van mijn proces hoeven niet eerst alle blogposts gelezen te worden, maar hoeft enkel een blik op de Radar Chart geworpen te worden. Als men meer wil weten over de desbetreffende rubric, kan er op een rubric geklikt worden. Vervolgens toont de grafiek aan de rechterkant van de Radar Chart alle taken die de rubric beinvloed hebben. Als dat nog niet voldoende is, toont de timeline een beschrijving en al het materiaal binnen die rubric. Om mezelf ook op technisch gebied uit te dagen, is dit portfolio gemaakt in React + Redux.',
         completed: true,
-        type: TYPE_VOID,
+        type: TYPE_EXTERNAL,
+        url: 'https://github.com/JasperStam/jasper-wtf',
+        urlDescription: 'jasper-wtf/',
         categories: [
             { name: 'Interface', progress: 10 },
             { name: 'UX', progress: 10 },
