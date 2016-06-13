@@ -1,7 +1,7 @@
 const defaultState = {
     show: false,
     images: [],
-    index: 1,
+    index: 0,
 };
 
 const gallery = (state = defaultState, action) => {
@@ -10,7 +10,7 @@ const gallery = (state = defaultState, action) => {
             return {
                 show: true,
                 images: action.images,
-                index: 1,
+                index: 0,
             };
         case 'CHANGE_GALLERY_INDEX':
             return {

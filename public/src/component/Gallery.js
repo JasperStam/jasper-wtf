@@ -19,7 +19,7 @@ const Gallery = ({ show, images, closeGallery, clickModal }) => (
                 <p className={styles.arrow}> &#8649; </p>
             </div>
             {images.map((image, i) =>
-                <Image key={i} index={i} src={`static/${image}`} />
+                <Image key={i} index={i} totalLength={images.length} src={`static/${image}`} />
            )}
         </div>
     </div>
