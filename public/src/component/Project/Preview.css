@@ -1,4 +1,34 @@
-.imagePreview {
+.image {
+    cursor: pointer;
     max-width: 100%;
+    vertical-align: middle;
+    transition: 0.1s opacity ease-out;
+}
+
+.image:hover {
+    opacity: 0.7;
+}
+
+.imageContainer {
+    background-color: white;
     border: 3px solid black;
+    transition: 0.3s border ease-out;
+}
+
+.imageContainer:hover {
+    border: 3px solid var(--purple);
+}
+
+.block {
+    display: block;
+}
+
+.link {
+    background-color: var(--purple);
+    color: white;
+    transition: 0.1s all ease-out;
+}
+
+.link:hover {
+    background-color: black;
 }
