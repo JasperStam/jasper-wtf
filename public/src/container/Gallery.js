@@ -11,6 +11,9 @@ const mapDispatchToProps = (dispatch) => ({
     closeGallery: () => {
         dispatch(hideGallery());
     },
+    clickModal(e) {
+        e.stopPropagation();
+    },
 });
 
 export default connect(
