@@ -14,12 +14,7 @@ export default React.createClass({
                 <div className={styles['category-container']}>
                     <Categories className={styles['radar-container']} />
                     <ActiveCategory />
-                    <Gallery images={[
-                        'ROCKETKITZ_0.png',
-                        'ROCKETKITZ_1.png',
-                        'ROCKETKITZ_2.png',
-                        'ROCKETKITZ_3.png']}
-                    />
+                    <Gallery />
                 </div>
                 <ProjectPosts />
             </div>

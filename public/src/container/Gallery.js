@@ -1,25 +1,19 @@
-import React, { PropTypes } from 'react';
-import classNames from 'classnames';
-import styles from 'component/Gallery.css';
+import { connect } from 'react-redux';
+import { hideGallery } from 'actions/index';
+import Gallery from 'component/Gallery';
 
-const Gallery = ({ images }) => (
-    <div className={styles.modalBackground}>
-        <div className={styles.modal}>
-            <div className={classNames(styles.arrowContainer, styles.left)}>
-                <p className={styles.arrow}> &#8647; </p>
-            </div>
-            <div className={classNames(styles.arrowContainer, styles.right)}>
-                <p className={styles.arrow}> &#8649; </p>
-            </div>
-            {images.map((image, i) =>
-                <img key={i} src={`static/${image}`} className={styles.image} />
-           )}
-        </div>
-    </div>
-);
+const mapStateToProps = (state) => ({
+    show: state.gallery.show,
+    images: state.gallery.images,
+});
 
-Gallery.propTypes = {
-    images: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
+const mapDispatchToProps = (dispatch) => ({
+    closeGallery: () => {
+        dispatch(hideGallery());
+    },
+});
 
-export default Gallery;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Gallery);
