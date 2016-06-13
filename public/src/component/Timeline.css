@@ -1,5 +1,5 @@
 .timeline {
-    width: 40px;
+    min-width: 40px;
     border-right: 3px solid black;
     margin-right: 40px;
     min-height: 80px;
